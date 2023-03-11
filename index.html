@@ -9,26 +9,31 @@
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-    <menu>
+    <main>
         <section>
-            <ul>
-                <li>
-                    <a href="#"><img src="" alt="Home"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="" alt="LinkedIn"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="" alt="GitHub"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="" alt="Instagram"></a>
-                </li>
-            </ul>
+            <nav class="navMenu">
+                <button type="submit" id="btnMenu" onclick="menu()"><img src="src/img/menu.png" alt="Menu"></button>
+                <ul class="" id="nav">
+                    <li> 
+                        <a href="home-page.html" target="main"><img src="src/img/home.png" alt="Home"></a>
+                    </li>
+                    <li>
+                        <a href="linkedin.html" target="main"><img src="src/img/linkedin.png" alt="LinkedIn"></a>
+                    </li>
+                    <li>
+                        <a href="github.html" target="main"><img src="src/img/github.png" alt="GitHub"></a>
+                    </li>
+                    <li>
+                        <a href="instagram.html"  target="main"><img src="src/img/instagram.png" alt="Instagram"></a>
+                    </li>
+                </ul>
+            </nav>
         </section>
-        <section class="dispositivos">
-            
+        <section class="dispositivos" id="disp">
+            <iframe src="home-page.html" frameborder="0" name="main"></iframe>
         </section>
-    </menu>
+    </main>
+
+    <script src="src/js/index.js"></script>
 </body>
 </html>

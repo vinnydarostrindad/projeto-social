@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+img {
+    display: block;
+    height: 530px;
+    width: 252px;
+    margin: auto;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}

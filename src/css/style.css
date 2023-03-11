@@ -7,7 +7,76 @@
 }
 
 body {
-    background: darkslategray center no-repeat fixed;
-    background-image: url('../img/fundo.jpg');
+    background: darkslategray url('../img/fundo.jpg') center no-repeat fixed;
+    background-size: cover;
+    backdrop-filter: blur(1px);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.navMenu {
+    height: 100vh; 
+    text-align: right;
+}
+
+nav button {
+    background-color: transparent;
+    height: 50px;
+    border: none;
+    margin: 5px 5px 10px 0 ;
+    cursor: pointer;
+}
+
+@keyframes abrirMenu {
+    from {
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes fecharMenu {
+    from {
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 5px 5px 0 0;
+    gap: 15px;
+    list-style: none;
+}
+
+ul.nav {
+    display: flex;
+}
+
+nav img {
+    width: 50px;
+}
+
+.dispositivos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 550px;
+    width: 266px;
+    background: url('../img/iphone.png') no-repeat;
+    background-size: contain;
+    z-index: -1;
+    
+    transform: translate(-50%, -50%);
+}
+
+iframe {
+    position: relative;
+    top: 2px;
+    left: -1px;
+    width: 260px;
+    height: 538px;
 }
