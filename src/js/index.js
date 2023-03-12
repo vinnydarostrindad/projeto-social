@@ -1,12 +1,28 @@
 var navMenu = document.getElementById('nav')
 var disp = document.getElementById('disp')
 var btnMenu = document.getElementById('btnMenu')
+var iframe = document.getElementById('iframe')
 
 function menu() {
     navMenu.classList.toggle("nav");
     
     borrar()
     animation()
+}
+
+function menuBG() {
+    disp.style.backgroundImage = "url('src/img/dispositivos/iphone.png')"
+    iframe.style.height = "532px"
+}
+
+function linkedinBG() {
+    disp.style.backgroundImage = "url('src/img/dispositivos/iphone-linkedin-header.png')"
+    iframe.style.height = "468px"
+}
+
+function githubBG() {
+    disp.style.backgroundImage = "url('src/img/dispositivos/iphone-github-header.png')"
+    iframe.style.height = "468px"
 }
 
 function borrar() {
@@ -20,9 +36,9 @@ function borrar() {
 }
 
 function animation() {
-    if (btnMenu.style.animation == "250ms linear 0s 1 normal none running abrirMenu") {
-        btnMenu.style.animation = "fecharMenu 250ms 1 linear"
+    if (btnMenu.style.animation == "150ms linear 0s 1 normal none running abrirMenu") {
+        btnMenu.style.animation = "fecharMenu 150ms 1 linear"
     } else {
-        btnMenu.style.animation = "abrirMenu 250ms 1 linear"
+        btnMenu.style.animation = "abrirMenu 150ms 1 linear"
     }
 }
