@@ -3,6 +3,16 @@ var disp = document.getElementById('disp')
 var btnMenu = document.getElementById('btnMenu')
 var iframe = document.getElementById('iframe')
 
+function mudouTamanho() {
+    if (window.innerWidth >= 769) {
+        disp.style.filter = ""
+        document.body.style.backdropFilter = ""
+    } else if (navMenu.classList == "nav") {
+        disp.style.filter = "blur(5px)"
+        document.body.style.backdropFilter = "blur(5px)"
+    }
+}
+
 function menu() {
     navMenu.classList.toggle("nav");
     

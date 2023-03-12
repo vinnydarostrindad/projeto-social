@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 769px) {
+    #btnMenu {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        padding: 15px 25px 0 0;
+    }
+
+    nav img {
+        width: 60px;
+        transition-duration: 250ms;
+    }
+
+    nav a:hover img {
+        transform: translate(-5px, -5px);
+    }
+}
